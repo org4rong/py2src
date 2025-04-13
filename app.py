@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hello World! new update_deployment.yaml"
+    return "Hello World! use customized .tekton/docker-push.yaml"
 
 if __name__ == '__main__':
     port = os.environ.get('FLASK_PORT') or 8080
